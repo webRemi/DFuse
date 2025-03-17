@@ -11,5 +11,5 @@ Example
 ./preload.exe 11040
 ```
 
-[!info]
+> [!NOTE]
 > Dont forget to update the DLL path.
