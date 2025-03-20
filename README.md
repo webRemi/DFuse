@@ -4,11 +4,11 @@ Preload for nativity - Performs clean DLL injection into a process.
 ## Commands
 Usage
 ```powershell
-./preload.exe <processName>
+./preload.exe <processName> <Dll>
 ```
 Example
 ```powershell
-./preload.exe notepad
+./preload.exe notepad dllmessage.dll
 ```
 
 > [!NOTE]
