@@ -12,5 +12,4 @@ Example
 ```
 
 > [!NOTE]
-> Dont forget to update the DLL path.
 > Injecting in already injected process will fail.
