@@ -1,13 +1,17 @@
 #include <Windows.h>
 #include <stdio.h>
 #include "C:\Users\attacker\source\hiddenLib-main\info\info.h"
+#include "listprocess.h"
+
+#define MAX_SIZE 1024
 
 int main(int argc, char* argv[]) {
 	if (argc < 2) {
 		printf("%s %s <pid>", ERROR, argv[0]);
 	}
 
-	DWORD dwPid = atoi(argv[1]);
+	CHAR* cProcessName = argv[1];
+	DWORD dwPid;
 	HANDLE hProcess = NULL;
 	LPCSTR lpDllName = "C:\\users\\attacker\\source\\repos\\dllmessage\\x64\\debug\\dllmessage.dll";
 	DWORD dwSize = strlen(lpDllName);
@@ -16,6 +20,8 @@ int main(int argc, char* argv[]) {
 	CHAR* cBuffer = NULL;
 	HANDLE hThread = NULL;
 	SIZE_T sNumberBytesWritten;
+
+	dwPid = ListProcess(cProcessName);
 
 	hProcess = OpenProcess(PROCESS_ALL_ACCESS, NULL, dwPid);
 	if (hProcess == NULL) {
