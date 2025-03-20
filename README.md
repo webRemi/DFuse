@@ -4,12 +4,15 @@ Preload for nativity - Performs clean DLL injection into a process.
 ## Commands
 Usage
 ```powershell
-./preload.exe <processName> <Dll>
+./dfuse.exe <processName> <Dll>
 ```
 Example
 ```powershell
-./preload.exe notepad dllmessage.dll
+./dfuse.exe notepad dllmessage.dll
 ```
 
 > [!NOTE]
 > Injecting in already injected process will fail.
+
+## Demo
+![DFuse demo](/assets/images/dfuse.png)
