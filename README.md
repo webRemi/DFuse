@@ -1,5 +1,5 @@
-# preload
-Preload for nativity - Performs clean DLL injection into a process.
+# DFuse
+Preshot for NFuse - Performs clean DLL injection into a process.
 
 ## Commands
 Usage
