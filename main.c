@@ -13,7 +13,7 @@ int main(int argc, char* argv[]) {
 	CHAR* cProcessName = argv[1];
 	DWORD dwPid;
 	HANDLE hProcess = NULL;
-	LPCSTR lpDllName = "C:\\users\\attacker\\source\\repos\\dllmessage\\x64\\debug\\dllmessage.dll";
+	LPCSTR lpDllName = "dllmessage.dll";
 	DWORD dwSize = strlen(lpDllName);
 	HMODULE hKernel32 = NULL;
 	FARPROC fLoadLibraryAddress = NULL;
